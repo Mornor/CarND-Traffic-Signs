@@ -4,7 +4,20 @@
 
 ### Overview
 
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train a model so it can decode traffic signs from natural images by using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then test your model program on new images of traffic signs you find on the web, or, if you're feeling adventurous pictures of traffic signs you find locally!
+This is the 2nd project of the <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">Self Driving Car Engineer Nanodegree</a> I am taking part. <br>
+In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from natural images by using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
+The model is then test on new images of traffic signs. 
+
+## Model
+I decided to take as a starter the article from Pr. Yann LeCunn, which you can found [here](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). 
+My model observe the following structure: 
+- <b>First Layer</b>: Convolutional layer, output of size 32*32*6
+- <b>Max pooling layer</b> Output of size 14*14*6
+- <b>Second layer</b> Convolutional layer, output of size 10*10*16
+- <b>Max pooling layer</b> Output of size 5*5*16
+- <b>Flatten Layer</b> Flatten shape to 1D
+- <b>Fully connected layer 1</b> Output of size 120
+- <b>Fully connected layer 2</b> Output of size n_classes
 
 ### Dependencies
 
@@ -16,20 +29,20 @@ This project requires **Python 3.5** and the following Python libraries installe
 - [scikit-learn](http://scikit-learn.org/)
 - [TensorFlow](http://tensorflow.org)
 - [Matplotlib](http://matplotlib.org/)
-- [Pandas](http://pandas.pydata.org/) (Optional)
-
-Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
-
-- `conda install -c https://conda.anaconda.org/menpo opencv3`
+- [OpenCV](http://opencv.org/)
 
 ### Dataset
 
 1. [Download the dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip). This is a pickled dataset in which we've already resized the images to 32x32.
-2. Clone the project and start the notebook.
+
+2. Start the notebook.
 ```
-git clone https://github.com/udacity/CarND-Traffic-Signs
-cd CarND-Traffic-Signs
 jupyter notebook Traffic_Signs_Recognition.ipynb
 ```
-3. Follow the instructions in the `Traffic_Signs_Recognition.ipynb` notebook.
+
+## Notes
+
+Choose a relativ small batch size as well as few epochs if yu want to run it locally.  
+
+
 
