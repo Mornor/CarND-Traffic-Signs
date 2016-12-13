@@ -40,7 +40,7 @@ This project requires **Python 3.5** and the following Python libraries installe
 jupyter notebook Traffic_Signs_Recognition.ipynb
 ```
 
-## Notes
+#### Notes
 
 Choose a relative small batch size as well as few epochs if you want to run it locally, since the model demands heavy computations.  
 
