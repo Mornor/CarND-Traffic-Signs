@@ -5,7 +5,7 @@
 ### Overview
 
 This is the 2nd project of the <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">Self Driving Car Engineer Nanodegree</a> I am taking part. <br>
-In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from natural images by using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
+In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from images of the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
 The model is then test on new images of traffic signs. 
 
 ## Model
