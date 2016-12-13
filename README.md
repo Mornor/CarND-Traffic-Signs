@@ -11,13 +11,13 @@ The model is then test on new images of traffic signs.
 ## Model
 I decided to take as a starter the article from Pr. Yann LeCunn, which you can found [here](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). 
 My model observe the following structure: 
-- <b>First Layer</b>: Convolutional layer, output of size 32*32*6
-- <b>Max pooling layer</b> Output of size 14*14*6
-- <b>Second layer</b> Convolutional layer, output of size 10*10*16
-- <b>Max pooling layer</b> Output of size 5*5*16
+- <b>First Layer</b>: Convolutional layer, output of size 32x32x6
+- <b>Max pooling layer</b> Output of size 14x14x6
+- <b>Second layer</b> Convolutional layer, output of size 10x10x16
+- <b>Max pooling layer</b> Output of size 5x5x6
 - <b>Flatten Layer</b> Flatten shape to 1D
 - <b>Fully connected layer 1</b> Output of size 120
-- <b>Fully connected layer 2</b> Output of size n_classes
+- <b>Fully connected layer 2</b> Output of size n_classes (43 in that case)
 
 ### Dependencies
 
