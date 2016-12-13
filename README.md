@@ -8,7 +8,7 @@ This is the 2nd project of the <a href="https://www.udacity.com/course/self-driv
 In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from images of the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
 The model is then test on new images of traffic signs. 
 
-## Model
+### Model
 I decided to take as a starter the article from Pr. Yann LeCunn, which you can found [here](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). 
 My model observe the following structure: 
 - <b>First Layer</b>: Convolutional layer, output of size 32x32x6
