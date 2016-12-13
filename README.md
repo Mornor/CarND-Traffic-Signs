@@ -42,7 +42,7 @@ jupyter notebook Traffic_Signs_Recognition.ipynb
 
 ## Notes
 
-Choose a relativ small batch size as well as few epochs if yu want to run it locally.  
+Choose a relative small batch size as well as few epochs if you want to run it locally, since the model demands heavy computations.  
 
 
 
