@@ -5,19 +5,19 @@
 ### Overview
 
 This is the 2nd project of the <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">Self Driving Car Engineer Nanodegree</a> I am taking part. <br>
-In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from natural images by using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
+In this project, I use a deep neural networks (convolutional neural networks) to classify traffic signs. The trained model can decode traffic signs from images of the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). <br>
 The model is then test on new images of traffic signs. 
 
-## Model
+### Model
 I decided to take as a starter the article from Pr. Yann LeCunn, which you can found [here](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). 
 My model observe the following structure: 
-- <b>First Layer</b>: Convolutional layer, output of size 32*32*6
-- <b>Max pooling layer</b> Output of size 14*14*6
-- <b>Second layer</b> Convolutional layer, output of size 10*10*16
-- <b>Max pooling layer</b> Output of size 5*5*16
+- <b>First Layer</b>: Convolutional layer, output of size 32x32x6
+- <b>Max pooling layer</b> Output of size 14x14x6
+- <b>Second layer</b> Convolutional layer, output of size 10x10x16
+- <b>Max pooling layer</b> Output of size 5x5x6
 - <b>Flatten Layer</b> Flatten shape to 1D
 - <b>Fully connected layer 1</b> Output of size 120
-- <b>Fully connected layer 2</b> Output of size n_classes
+- <b>Fully connected layer 2</b> Output of size n_classes (43 in that case)
 
 ### Dependencies
 
@@ -40,9 +40,8 @@ This project requires **Python 3.5** and the following Python libraries installe
 jupyter notebook Traffic_Signs_Recognition.ipynb
 ```
 
-## Notes
+#### Notes
 
-Choose a relativ small batch size as well as few epochs if yu want to run it locally.  
-
+Choose a relative small batch size as well as few epochs if you want to run it locally, since the model demands heavy computations.  
 
 
